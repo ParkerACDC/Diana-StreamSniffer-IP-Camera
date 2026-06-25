@@ -1,5 +1,5 @@
-**Automated Enumeration & Credential Scanner for IP Cameras
-**
+**Automated Enumeration & Credential Scanner for IP Cameras**
+
 Diana StreamSniffer is a specialized network auditing tool designed to help administrators and researchers identify exposed IP cameras on local networks. Developed as part of an academic thesis project, 
 it automates the process of discovering cameras, identifying open protocols, and auditing devices against common default credential vulnerabilities.
 
