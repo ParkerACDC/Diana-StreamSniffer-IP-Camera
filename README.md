@@ -1,4 +1,4 @@
-**Automated Enumeration & Credential Scanner for IP Cameras**
+**Automated Enumeration & Credential Scanner for IP Cameras 📸**
 
 Diana StreamSniffer is a specialized network auditing tool designed to help administrators and security researchers actively probe and audit IP cameras on local networks. Developed as part of an academic thesis project, it automates the process of discovering camera services, fingerprinting open interfaces, enumerating common endpoints, and auditing devices against known default credential vulnerabilities.
 
@@ -24,10 +24,14 @@ To ensure responsible use, this tool is strictly limited to private/local networ
 - Smart Protocol Guard: Well-known non-HTTP ports (FTP, SSH, Telnet, RTSP) are explicitly excluded from HTTP interface checks, preventing false positives and keeping output clean.
 - All-in-One Execution: Combines host discovery, concurrent port scanning, HTTP fingerprinting, endpoint fuzzing, and multi-protocol credential auditing into a single cohesive terminal workflow with no complex command-line flags required.
 
-**Requirements**
+**Requirements 📝**
 This tool relies primarily on Python standard libraries, minimizing external dependencies.
 Dependencies:
 - Python 3.12 (Developed and tested on this version)
 - requests (pip install requests)
+
+▶️ How to use:
+1. Make sure the camera is connected yo your PC hotspot (for easier way to find out the camera's IP adress), or connected to Wifi's router (to find out what's the IP address try use router control panel like TP-Link Control / Huawei web page network configuration / etc).
+2. Run the Diana tool nad enter the camera's IP address
 
 The developer assumes no liability and is not responsible for any misuse, damage, or legal consequences caused by utilizing this tool :D
