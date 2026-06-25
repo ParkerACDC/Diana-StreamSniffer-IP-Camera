@@ -12,10 +12,10 @@ To ensure responsible use, this tool is strictly limited to private/local networ
 - HTTP Interface Fingerprinting: Probes open web ports to retrieve HTTP status codes and Server header banners, providing quick identification of the camera's web interface type and software.
 - Endpoint & Directory Enumeration: Actively fuzzes a curated list of common IP camera paths (e.g., /admin, /live, /cgi-bin/, /onvif1, /stream1) across all open web ports to identify exposed login portals, viewing pages, and administrative directories.
 - Deep Credential Auditing: Tests a built-in list of common manufacturer default credentials across multiple services:
-  >> RTSP: First checks whether the stream requires authentication at all. If protected, supports both Basic Auth and full Digest Auth challenge-response, including parsing of realm, nonce, qop, and opaque fields with     correct MD5 hash construction.
-  >> HTTP: Uses form-detection heuristics to dynamically identify login field names (e.g., username, pwd) from HTTP 200 OK login pages, enabling credential testing against custom web interfaces beyond simple Basic Auth.
-  >> FTP: Tests default credentials against open FTP services commonly left enabled by manufacturers.
-  >> SSH & Telnet: Rather than brute-forcing, open SSH (port 22) and Telnet (port 23) are immediately flagged as HIGH RISK and CRITICAL respectively, with advisory output alerting the user to the presence of unencrypted or remotely accessible terminal services.
+  > - RTSP: First checks whether the stream requires authentication at all. If protected, supports both Basic Auth and full Digest Auth challenge-response, including parsing of realm, nonce, qop, and opaque fields with     correct MD5 hash construction.
+  > - HTTP: Uses form-detection heuristics to dynamically identify login field names (e.g., username, pwd) from HTTP 200 OK login pages, enabling credential testing against custom web interfaces beyond simple Basic Auth.
+  > - FTP: Tests default credentials against open FTP services commonly left enabled by manufacturers.
+  > - SSH & Telnet: Rather than brute-forcing, open SSH (port 22) and Telnet (port 23) are immediately flagged as HIGH RISK and CRITICAL respectively, with advisory output alerting the user to the presence of unencrypted or remotely accessible terminal services.
 - Live Stream Extraction: Generates ready to test RTSP stream URLs across common stream paths for all confirmed open RTSP ports, formatted for direct use with VLC Media Player.
 
 **Special?**
